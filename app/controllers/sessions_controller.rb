@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
           redirect_to user      #  NEW LINE
         else
           flash[:danger] = 'Invalid email/password combination' # Not quite right!
-          render 'new'
+          render 'new'#direct to the default folder which is sessions new.html.erb
         end
      end
 
